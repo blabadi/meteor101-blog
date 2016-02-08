@@ -1,0 +1,8 @@
+<template name="nav">
+    <ul class="nav nav-stacked nav-pills">
+       {{#each deps}}
+           <li class="{{#if selected}}active{{/if}}"><a href ="{{pathFor route='depDetails'}}">{{name}}</a></li>
+       {{/each}}
+    </ul>
+</template>
+
